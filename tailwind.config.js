@@ -1,6 +1,7 @@
 // tailwind.config.js
 import {nextui} from "@nextui-org/react";
 
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -14,66 +15,80 @@ export default {
   darkMode: "class",
   plugins: [
     nextui({
+      addCommonColors: false,
+      defaultTheme: "light",
+      defaultExtendTheme: "light",
+      layout: {
+        
+      },
       themes: {
         light: {
+          layout: {
+            
+          },
           colors: {
+            background: "#EDEDED",
             primary: {
-              50: "#f0fae3",
-              100: "#F2FBDA",
-              200: "#E2F8B7",
-              300: "#C8EB8F",
-              400: "#AAD86E",
-              500: "#83BE42",
-              600: "#67A330",
-              700: "#4D8821",
-              800: "#376E15",
-              900: "#265B0C",
-              DEFAULT: "#83BE42",
+              50: "#FFF9E8",
+              100: "#FEF4D0",
+              200: "#FDE8A2",
+              300: "#FDDD73",
+              400: "#FCD145",
+              500: "#FBC616",
+              600: "#E2B214",
+              700: "#D5A813",
+              800: "#C99E12",
+              900: "#BC9510",
+              DEFAULT: "#FBC616",
             },
             secondary: {
-              50: "#f0f0fa",
-              100: "#EDEDF8",
-              200: "#D8D8F2",
-              300: "#BEBEE8",
-              400: "#9F9FE0",
-              500: "#7A7AD4",
-              600: "#5F5FC9",
-              700: "#4545BD",
-              800: "#3030B3",
-              900: "#1F1FAA",
-              DEFAULT: "#7A7AD4",
-            }
+              50: "#F6F7F7",
+              100: "#EEEEEF",
+              200: "#DCDDDF",
+              300: "#CBCCCE",
+              400: "#B9BBBE",
+              500: "#A8AAAE",
+              600: "#97999D",
+              700: "#8F9094",
+              800: "#86888B",
+              900: "#7E8082",
+              DEFAULT: "#A8AAAE",
+            },
 
 
           }
         },
         dark: {
+          layout: {},
           colors: {
+            background: {
+              DEFAULT: "#171717",
+            },
             primary: {
-              50: "#f0fae3",
-              100: "#F2FBDA",
-              200: "#E2F8B7",
-              300: "#C8EB8F",
-              400: "#AAD86E",
-              500: "#83BE42",
-              600: "#67A330",
-              700: "#4D8821",
-              800: "#376E15",
-              900: "#265B0C",
-              DEFAULT: "#83BE42",
+              50: "#FFF9E8",
+              100: "#FEF4D0",
+              200: "#FDE8A2",
+              300: "#FDDD73",
+              400: "#FCD145",
+              500: "#FBC616",
+              600: "#E2B214",
+              700: "#D5A813",
+              800: "#C99E12",
+              900: "#BC9510",
+              DEFAULT: "#FBC616",
             },
             secondary: {
-              50: "#f0f0fa",
-              100: "#EDEDF8",
-              200: "#D8D8F2",
-              300: "#BEBEE8",
-              400: "#9F9FE0",
-              500: "#7A7AD4",
-              600: "#5F5FC9",
-              700: "#4545BD",
-              800: "#3030B3",
-              900: "#1F1FAA",
-              DEFAULT: "#7A7AD4",
+              50: "#F6F7F7",
+              100: "#EEEEEF",
+              200: "#DCDDDF",
+              300: "#CBCCCE",
+              400: "#B9BBBE",
+              500: "#A8AAAE",
+              600: "#97999D",
+              700: "#8F9094",
+              800: "#86888B",
+              900: "#7E8082",
+              DEFAULT: "#A8AAAE",
             }
           }
         }
